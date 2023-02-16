@@ -13,45 +13,51 @@ while (true) {
     double nombre1 = 0;
     double nombre2 = 0;
     double resultat = 0;
-    switch (reponse)
+    if (reponse == 1)
     {
-        case 1:
-            Console.WriteLine("----- Vous avez choisi l'addition -----");
-            Console.Write("Entrez le premier nombre : ");
-            nombre1 = double.Parse(Console.ReadLine());
-            Console.Write("Entrez le deuxième nombre : ");
-            nombre2 = double.Parse(Console.ReadLine());
-            resultat = nombre1 + nombre2;
-            Console.WriteLine("Le résultat est : " + resultat);
-            break;
-        case 2:
-            Console.WriteLine("----- Vous avez choisi la soustraction -----");
-            Console.Write("Entrez le premier nombre : ");
-            nombre1 = double.Parse(Console.ReadLine());
-            Console.Write("Entrez le deuxième nombre : ");
-            nombre2 = double.Parse(Console.ReadLine());
-            resultat = nombre1 - nombre2;
-            Console.WriteLine("Le résultat est : " + resultat);
-            break;
-        case 3:
-            Console.WriteLine("----- Vous avez choisi la multiplication -----");
-            Console.Write("Entrez le premier nombre : ");
-            nombre1 = double.Parse(Console.ReadLine());
-            Console.Write("Entrez le deuxième nombre : ");
-            nombre2 = double.Parse(Console.ReadLine());
-            resultat = nombre1 * nombre2;
-            Console.WriteLine("Le résultat est : " + resultat);
-            break;
-        case 4:
-            Console.WriteLine("----- Vous avez choisi la division -----");
-            Console.Write("Entrez le premier nombre : ");
-            nombre1 = double.Parse(Console.ReadLine());
-            Console.Write("Entrez le deuxième nombre : ");
-            nombre2 = double.Parse(Console.ReadLine());
-            resultat = nombre1 / nombre2;
-            Console.WriteLine("Le résultat est : " + resultat);
-            break;
-        default:
-            break;
+        Console.WriteLine("----- Vous avez choisi l'addition -----");
+        Console.Write("Entrez le premier nombre : ");
+        nombre1 = double.Parse(Console.ReadLine());
+        Console.Write("Entrez le deuxième nombre : ");
+        nombre2 = double.Parse(Console.ReadLine());
+        resultat = nombre1 + nombre2;
+        Console.WriteLine("Le résultat est : " + resultat);
+
+    }
+    else if (reponse == 2)
+    {
+        Console.WriteLine("----- Vous avez choisi la soustraction -----");
+        Console.Write("Entrez le premier nombre : ");
+        nombre1 = double.Parse(Console.ReadLine());
+        Console.Write("Entrez le deuxième nombre : ");
+        nombre2 = double.Parse(Console.ReadLine());
+        resultat = nombre1 - nombre2;
+        Console.WriteLine("Le résultat est : " + resultat);
+    }
+    else if (reponse == 3)
+    {
+        Console.WriteLine("----- Vous avez choisi la multiplication -----");
+        Console.Write("Entrez le premier nombre : ");
+        nombre1 = double.Parse(Console.ReadLine());
+        Console.Write("Entrez le deuxième nombre : ");
+        nombre2 = double.Parse(Console.ReadLine());
+        resultat = nombre1 * nombre2;
+        Console.WriteLine("Le résultat est : " + resultat);
+    }
+    else if (reponse == 4)
+    {
+        Console.WriteLine("----- Vous avez choisi la division -----");
+        Console.Write("Entrez le premier nombre : ");
+        nombre1 = double.Parse(Console.ReadLine());
+        Console.Write("Entrez le deuxième nombre : ");
+        nombre2 = double.Parse(Console.ReadLine());
+        resultat = nombre1 / nombre2;
+        Console.WriteLine("Le résultat est : " + resultat);
+    }
+    else 
+    {
+        Console.WriteLine("Choix invalide...");
     }
 }
+
+
